@@ -8,26 +8,59 @@
   
   <title>Frontend Mentor | Stats preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./style.css">
+  
 </head>
 <body>
+  <section>
+    <div class="card">
+      <div class="card__image">
+        <div class="card__picture"></div>
+        <!-- <picture>
+          <source media="(min-width:768px)" srcset="./images/image-header-desktop.jpg">
+          <img src="./images/image-header-mobile.jpg" alt="Photo from office">
+        </picture> -->
+      </div>
+      <div class="card__content">
+        <h1>Get <span>insights</span> that help your business grow.</h1>
+        <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+          experience, and overall efficiency.</p>
+        <div class="card__stats">
+          <div class="stats__item">
+            10k+
+            <br>
+            <span>companies</span>
+          </div>
+          <div class="stats__item">
+            314
+            <br>
+            <span>templates</span>
+          </div>
+          <div class="stats__item">
+            12M+
+            <br>
+            <span>queries</span>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
 
-  Get insights that help your business grow.
+  
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+  
 
-  10k+ companies
-  314 templates
-  12m+ queries
+  
+  
+  
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Danilo Blum</a>.
   </div>
 </body>
 </html>
