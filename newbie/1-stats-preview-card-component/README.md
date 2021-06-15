@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop solution](newbie/1-stats-preview-card-component/design/desktop-design.jpg)
-![Mobile solution](newbie/1-stats-preview-card-component/design/mobile-design.jpg)
+![Desktop solution](https://daniloblum.github.io/frontendmentor/newbie/1-stats-preview-card-component/design/desktop-design.jpg)
+![Mobile solution](https://daniloblum.github.io/frontendmentor/newbie/1-stats-preview-card-component/design/mobile-design.jpg)
 
 ### Links
 
