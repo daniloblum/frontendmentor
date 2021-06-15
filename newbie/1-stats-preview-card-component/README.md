@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://daniloblum.github.io/frontendmentor/newbie/1-stats-preview-card-component/index.html)
+- Solution URL: [Live solutution](https://daniloblum.github.io/frontendmentor/newbie/1-stats-preview-card-component/index.html)
 
 ## My process
 
