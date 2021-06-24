@@ -1,0 +1,150 @@
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+$transparent-white: hsla(0, 0%, 100%, 0.75); //paragraphs
+$very-light-gray: hsl(0, 0%, 95%); //background, headings, buttons
+
+$font-lexend-deca: 'Lexend Deca', sans-serif; //paragraphs
+$font-big-shoulders-display: 'Big Shoulders Display', cursive; //title
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: $font-lexend-deca;
+    background-color: $very-light-gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    
+
+    >:first-child {
+        border-radius: 0.8rem 0.8rem 0 0;
+    }
+
+    >:last-child {
+        border-radius: 0 0 0.8rem 0.8rem;
+    }
+
+    &__item {
+
+        padding: 48px;
+
+        &--item1 {
+            background-color: $bright-orange;
+
+            .card__button a {
+                color: $bright-orange;
+            }
+        }
+        &--item2 {
+            background-color: $dark-cyan;
+            
+            .card__button a {
+                color: $dark-cyan;
+            }
+        }
+        &--item3 {
+            background-color: $very-dark-cyan;
+            
+            .card__button a {
+                color: $very-dark-cyan;
+            }
+        }
+
+        .card__icon {
+            height: 40px;
+            width: auto;
+            margin-bottom: 40px;
+        }
+
+        .card__title {
+            font-family: $font-big-shoulders-display;
+            color: $very-light-gray;
+            font-size: 2.4rem;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .card__description {
+            color: $transparent-white;
+            line-height: 1.8;
+            font-size: 1rem;
+            margin-bottom:40px;
+        }
+
+        .card__button {
+            display: inline-block;
+            text-align: center;
+            
+            a {
+                background-color: $very-light-gray;
+                border: 2px solid $very-light-gray;
+                border-radius: 2rem;
+                padding: 12px 28px;
+                transition: 0.25s ease-out;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $very-light-gray;
+                }
+            }
+        }   
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+@media (min-width: 992px) {
+    .card {
+        flex-direction: row;
+        max-width: 920px;
+        margin: auto;
+
+        >:first-child {
+            border-radius: 0.8rem 0 0 0.8rem;
+        }
+    
+        >:last-child {
+            border-radius: 0 0.8rem 0.8rem 0;
+        }
+
+        .card__description {
+            margin-bottom:80px;
+        }
+    }
+}

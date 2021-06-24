@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 20px;
+}
+
+.card > :first-child {
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.card > :last-child {
+  border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.card__item {
+  padding: 48px;
+}
+
+.card__item--item1 {
+  background-color: #e38826;
+}
+
+.card__item--item1 .card__button a {
+  color: #e38826;
+}
+
+.card__item--item2 {
+  background-color: #006970;
+}
+
+.card__item--item2 .card__button a {
+  color: #006970;
+}
+
+.card__item--item3 {
+  background-color: #004241;
+}
+
+.card__item--item3 .card__button a {
+  color: #004241;
+}
+
+.card__item .card__icon {
+  height: 40px;
+  width: auto;
+  margin-bottom: 40px;
+}
+
+.card__item .card__title {
+  font-family: "Big Shoulders Display", cursive;
+  color: #f2f2f2;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.card__item .card__description {
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.card__item .card__button {
+  display: inline-block;
+  text-align: center;
+}
+
+.card__item .card__button a {
+  background-color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+  border-radius: 2rem;
+  padding: 12px 28px;
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+.card__item .card__button a:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 992px) {
+  .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 920px;
+    margin: auto;
+  }
+  .card > :first-child {
+    border-radius: 0.8rem 0 0 0.8rem;
+  }
+  .card > :last-child {
+    border-radius: 0 0.8rem 0.8rem 0;
+  }
+  .card .card__description {
+    margin-bottom: 80px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
